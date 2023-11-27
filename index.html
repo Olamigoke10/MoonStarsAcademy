@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Box Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtrSS6faShfd5A1QoWAkBMfoyyYFeHotg&callback=initMap" async defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+<div class="main_container"> 
+       <!-- header section starts -->
+    <div class="head">
+        <div class="header">
+            <div class="logo">
+                <h2>MOON 'N' stars</h2>
+            </div>
+
+
+            <div class="link">
+                <ul class="link_menu">
+                    <li class="link_items animated-text"> <a href="">Home</a></li>
+                    <li class="link_items"> <a href="#SERVICE">service</a></li>
+                    <li class="link_items"> <a href="#ABOUT">about</a></li>
+                    <li class="link_items"> <a href="#ACHIEVE">achievments</a></li>
+                    <li class="link_items"> <a href="/signup.html"><div class="head_btn animated-button-pulse" >Register</div></a></li>
+                </ul>
+            </div>
+
+            
+            <div class="menu_toggle">
+                <i class='bx bx-menu-alt-right' id="menu_button"></i>
+            </div>
+        </div>
+
+        <div class="head_content">
+            <div class="head_first">
+                <h2>Welcome to Moon 'N' Stars School</h2>
+            </div>
+            <div class="head_second">
+                <p> We are more than just a school;
+                    we are a constellation of dreams, where each student's unique brilliance shines.</p>
+            </div>
+        </div>
+    </div>
+    <!-- header section ends -->
+
+    <!-- Service Section starts -->    
+
+    <div class="service_section" id="SERVICE">
+        <div class="service_head">
+            <h3 class="service_h3">Our services</h3>
+            <p class="service_text">WHAT WE OFFER</p>
+        </div>
+
+        <div class="service_contents">
+            <div class="service_icons">
+                <div class="s_icon">
+                    <div class="s_img">
+                        <img src="/images/online-library.png" alt="" srcset="">
+                    </div>
+                    <div class="s_text">
+                        <h4>Library</h4>
+                        <p>Fully Functioning Library</p>
+                    </div>
+                </div>
+                <div class="s_icon">
+                    <div class="s_img">
+                        <img src="/images/city.png" alt="" srcset="">
+                    </div>
+                    <div class="s_text">
+                        <h4>Clean And Condusive Environment</h4>
+                        <p>A very clean and Condusive Environment</p>
+                    </div>
+                </div>
+                <div class="s_icon">
+                    <div class="s_img">
+                        <img src="/images/healthcare.png" alt="" srcset="">
+                    </div>
+                    <div class="s_text">
+                        <h4>Standard Healthcare</h4>
+                        <p>A fully equipped and Functioning Healthenter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service_icons">
+                <div class="s_icon">
+                    <div class="s_img">
+                        <img src="/images/discussion.png" alt="" srcset="">
+                    </div>
+                    <div class="s_text">
+                        <h4>Counselling</h4>
+                        <p>Trained Counselling Personnel</p>
+                    </div>
+                </div>
+                <div class="s_icon">
+                    <div class="s_img">
+                        <img src="/images/laboratory.png" alt="" srcset="">
+                    </div>
+                    <div class="s_text">
+                        <h4>Standard LAbs</h4>
+                        <p>Standard Laboratorys For Student</p>
+                    </div>
+                </div>
+                <div class="s_icon">
+                    <div class="s_img">
+                        <img src="/images/playground.png" alt="" srcset="">
+                    </div>
+                    <div class="s_text">
+                        <h4>Playground</h4>
+                        <p>All Work And No Play Makes Jack ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Service Section ends -->
+
+     <!-- About starts -->
+     <div class="about_section" id="ABOUT">
+        <div class="about_head">
+            <h3 class="about_h3">About Us</h3>
+            <p>MOON 'N' STARS</p>
+        </div>
+        <div class="about_contents">
+            <div class="student">
+                <div class="a_img">
+                    <img src="/images/student2.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="history">
+                <div class="contents">
+                   <div class="content_head">
+                    <h2>HISTORY</h2>
+                   </div>
+                   <div class="content_p">
+                    <p>Moon Stars Scholars Academy, founded in 1995, is an esteemed institution dedicated to providing a nurturing and enriching educational experience for students. With a legacy of over two decades, we have consistently set high standards in academic excellence, character development, and holistic education.
+                        <span id="read_span">Our school's mission is to inspire a love for learning while empowering students to reach their full potential. We believe that education goes beyond textbooks and classrooms; it is about fostering curiosity, critical thinking, and a strong sense of values.    
+                        At Moon Stars Scholars Academy, we offer a comprehensive curriculum designed to equip our students with the knowledge and skills required to thrive in an ever-evolving world. Our dedicated and passionate educators are committed to providing a supportive and engaging learning environment. We encourage creativity, individuality, and a passion for exploration, ensuring that every child's unique talents are celebrated.</span>
+                        <button id="readMoreButton" onclick="toggleReadMore()">Read More</button></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- About starts -->
+
+
+     <!-- Achievement starts -->
+     <div class="testimonial-container" id="ACHIEVE">
+        <div class="testimonial_head">
+            <h3 class="testimonial_h3">Achievements</h3>
+            <p>Our Achievements..</p>
+        </div>
+        <div class="testimonial-carousel">
+            <div class="carousel-item">
+              <div class="testimonial-content">
+                <img src="/images/achievement.png" alt="Testimonial 1">
+                <h3>Academic Excellence</h3>
+                <p> MoonStars Scholars Academy consistently maintains high academic standards, fostering a culture of excellence where students achieve outstanding results and excel in their studies</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-content">
+                <img src="/images/achievement (1).png" alt="Testimonial 2">
+                <h3>Sports Achievements</h3>
+                <p>MoonStars Scholars Academy's sports teams shine on the field, securing numerous championship titles and displaying exceptional skills, teamwork, and sportsmanship.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-content">
+                <img src="/images/badge.png" alt="Testimonial 3">
+                <h3>Community Service</h3>
+                <p>MoonStars Scholars Academy actively engages its students in meaningful community service projects, making a positive impact on the local community and instilling a sense of social responsibility.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-content">
+                    <img src="/images/badge.png" alt="Testimonial 3">
+                    <h3>STEM Achievements</h3>
+                    <p>MoonStars Scholars Academy emphasizes STEM education, empowering students to excel in science, technology, engineering, and mathematics. The academy's students participate in prestigious STEM competitions and demonstrate innovative thinking and problem-solving skills.</p>
+                  </div>
+            </div>
+
+          </div>
+          <div class="carousel-controls">
+            <button id="carousel-prev">&#9001;</button>
+            <button id="carousel-next">&#9002;</button>
+          </div>
+     <!-- Testimonials starts -->
+
+
+     <!-- Contact Us Starts -->
+     <section id="contact">
+        <div class="contact_container">
+          <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any inquiries or questions.</p>
+            <ul>
+              <li><i class='bx bxs-map' ></i> 8 jazz avenue, Lagos, Nigeria</li>
+              <li><i class='bx bx-phone'></i>08081418543</li>
+              <li><i class='bx bxs-envelope' ></i> info@example.com</li>
+            </ul>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+      </section>
+      <!-- Contact Us Ends -->
+
+
+    <!-- Footer starts -->
+    <div class="footer">
+        <div class="f_container">
+            <div class="f_row">
+                <div class="f_text f_sect">
+                    <h4>About Us</h4>
+                    <p>About the School</p>
+                    <p>Our Team</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="f_links f_sect">
+                    <h4>Quick Links</h4>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Courses</a></p>
+                    <p><a href="#">Admissions</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                </div>
+                <div class="f_info f_sect">
+                    <h4>Contact Us</h4>
+                    <p>8, Jazz Avenue Iba New site</p>
+                    <p>Lagos, Nigeria</p>
+                    <p>Email: <a href="mailto:info@moonstarsacademy.com">info@moonstarsacademy.com</a></p>
+                    <p>Phone: 08081418543</p>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2023 Moon Stars Scholars Academy</p>
+    </div>
+    <!-- Footer ends -->
+
+    
+<!-- Scroll to Top Button -->
+</div>
+
+<button id="scroll-to-top" title="Scroll to Top">
+    <img src="/images/arrow.png" alt="Scroll to Top">
+</button>
+    <script src="/js/index.js"></script>
+    
+</body>
+</html>
